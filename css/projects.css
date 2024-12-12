@@ -1,0 +1,124 @@
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+
+.portfolio-list,
+.portfolio-card { display: grid; }
+
+.portfolio-list { gap: 50px; }
+
+.portfolio-card { gap: 25px; }
+
+.portfolio-card .card-banner {
+  position: relative;
+  width: 504px;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio-card .card-banner:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-card .chip {
+  max-width: max-content;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 6px 20px;
+  margin-top: 20px;
+  margin-block-end: 18px;
+}
+
+.portfolio-card h3{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.portfolio-card .card-text { 
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  .portfolio-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .portfolio-list > li:nth-child(2n) .card-banner { order: 1; }
+
+  .portfolio-card > * {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .portfolio-card .card-text { margin-block-start: 20px; }
+
+}
+
+/* Responsive Styles */
+
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  /* Additional adjustments for smaller screens */
+
+  .portfolio-card .card-banner{
+    width: 325px;
+  }
+
+  .portfolio-card .card-banner:hover{
+    width: 328px;
+  }
+
+  .card-banner.img-holder img{
+    width: 320px;
+    height: 210px;
+  }
+
+  .card-content{
+    width: 350px;
+  }
+
+  .card-content .chip{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .card-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  #portfolio-label{
+    font-size: 30px;
+  }
+}
