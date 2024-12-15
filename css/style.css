@@ -12,8 +12,8 @@
 :root{
   --bg-color: #080808;
   --second-bg-color: #131313;
-  --text-color: rgb(190, 25, 211);
-  --main-color: #4586d4;
+  --text-color: rgb(211, 62, 25);
+  --main-color: #8f0404;
   --bg-image: url(assets/bg.jpg);
 }
 
@@ -23,7 +23,7 @@ html{
 }
 
 body{
-  background-color: rgb(192, 228, 242);
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   color: var(--text-color);
 }
