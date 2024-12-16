@@ -271,23 +271,23 @@ span{
 @keyframes words{
   0%,
   20%{
-    content: "Web Designer";
+    content: "Volunteer coordination";
   }
   21%,
   40%{
-    content: "JavaScript Expert";
+    content: "Community Engager";
   }
   41%,
   60%{
-    content: "React Expert";
+    content: "Project manager";
   }
   61%,
   80%{
-    content: "Python Developer";
+    content: "Advocacy campaigns";
   }
   81%,
   100%{
-    content: "Software Tester";
+    content: "Community outreacher";
   }
 }
 
@@ -627,10 +627,11 @@ span{
 
 .certificates-boxes{
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  grid-template-columns: 1fr 1fr;
   margin-top: 40px;
 }
 
@@ -725,7 +726,7 @@ span{
   } 
 
   .logo{
-    height: 70px;
+    height: 50px;
     width: 70px;
   }
 
