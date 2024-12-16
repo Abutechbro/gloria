@@ -897,7 +897,8 @@ span{
 /*certificate section responsive*/
 @media (max-width: 1024px) {
   .certificates-boxes {
-    flex-direction: column; /* Change to single column layout */
+    display: grid;
+    grid-template-columns: 1fr; /* Change to single column layout */
     gap: 2rem;
   }
 
@@ -905,6 +906,8 @@ span{
     width: 90%; /* Adjust width to fit the screen */
     height: auto;
     padding: 30rem 50rem 25rem 35rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .certificate-category {
@@ -931,11 +934,15 @@ span{
 
   .certificates-boxes {
     gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .certificate-box {
     border-radius: 15px;
     padding: 16rem 17rem 10rem 24rem;
+    display: grid;
+    grid-template-columns: 1fr;
     
   }
 
@@ -957,11 +964,15 @@ span{
 
   .certificates-boxes {
     gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .certificate-box {
     border-radius: 15px;
     padding: 16rem 17rem 10rem 24rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .modal {
     padding: 70px;
@@ -990,12 +1001,16 @@ span{
 
   .certificates-boxes {
     gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .certificate-box {
     width: 100%;
     border-radius: 10px;
     padding: 16rem 17rem 10rem 24rem;
+    display: grid;
+    grid-template-columns: 1fr;
     
   }
   
