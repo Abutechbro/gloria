@@ -271,7 +271,7 @@ span{
 @keyframes words{
   0%,
   20%{
-    content: "Volunteer coordination";
+    content: "Community Engager";
   }
   21%,
   40%{
@@ -287,7 +287,7 @@ span{
   }
   81%,
   100%{
-    content: "Community outreacher";
+    content: "Community Engager";
   }
 }
 
